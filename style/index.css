@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+body,
+html {
+	color: #ABB2BF;
+	height: 100%;
+	font-family: 'Fira Code', monospace;
+	font-weight: 400;
+	background-color: #282C33;
+}
+
+.button {
+	color: white;
+	border: 1px solid #C778DD;
+	padding: 8px 16px;
+	background: none;
+	font-weight: 500;
+}
+.section_title {
+	margin: 0;
+	position: relative;
+	font-size: 32px;
+	max-width: 195px;
+}
+.wrapper {
+	margin: 0 auto;
+	padding: 62px 10px 0 10px;
+	display: flex;
+	max-width: 1024px;
+	min-height: 100%;
+	flex-direction: column;
+}
+
+.header {
+	z-index: 10;
+	width: 100%;
+	position: fixed;
+	background-color: #282C33;
+}
+.header_wrapper {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 32px 10px 32px 10px;
+	justify-content: space-between;
+
+}
+
+.header_logo {
+	color: white;
+	text-decoration: none;
+}
+
+.header_site-logo {
+	width: 16px;
+	height: 16px;
+}
+
+.header_links {
+	display: flex;
+	justify-content: sb;
+}
+.header_navigation {
+}
+
+.header_link {
+	color: #ABB2BF;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.header_link::before {
+	color: #C778DD;
+	content: "#";
+	display: inline;
+}
+
+.header_link:hover {
+	color: white;
+}
+
+.header_language-button {
+	font-size: 14px;
+	color: #ABB2BF;
+	border: none;
+	background: none;
+}
+
+.header_language-button:hover {
+	cursor: pointer;
+	color: white;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.main-information {
+	position: relative;
+	padding-top: 62px;
+}
+
+.main-information_wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 112px;
+	justify-content: space-between;
+}
+
+.accent {
+	color: #C778DD;
+}
+
+.main-information {
+	padding-bottom: 200px;
+}
+
+.main-information_info {
+	/*  */
+}
+
+.main-information_title {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.main-information_subtitle {
+	display: block;
+	font-size: 16px;
+}
+
+.main-information_button {
+	cursor: pointer;
+}
+
+.main-information_image-wrapper {
+	position: relative;
+}
+.main-information_logo-image {
+	position: absolute;
+	left: 0;
+	z-index: 2;
+	top: 40px;
+
+}
+.main-information_dots-image {
+	position: absolute;
+	right: 0;
+	bottom: 70px;
+}
+.main-information_image {
+	height: auto;
+	max-width: 457px;
+
+}
+
+.main-information_image-wrapper-text {
+	bottom: -29px;
+	border: 1px solid #ABB2BF;
+	padding: 8px 80px 8px 34px;
+	position: absolute;
+	background-color: #282C33;
+}
+
+.main-information_image-wrapper-text span {
+	color: white;
+}
+
+.main-information_image-wrapper-text::before {
+	left: 10px;
+	width: 16px;
+	height: 16px;
+	content: "";
+	display: block;
+	position: absolute;
+	background: #C778DD;
+}
+
+.main-information_thesis-wrapper {
+	position: relative;
+	max-width: 712px;
+}
+
+.main-information_thesis-wrapper {
+	margin: 0 auto;
+	position: relative;
+}
+
+.main-information_thesis-wrapper p {
+	border: 1px solid white;
+	margin: 0 auto;
+	padding: 31px;
+	font-size: 24px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.main-information_thesis {
+	position: relative;
+	text-align: center;
+}
+
+.main-information_thesis-author {
+	right: 0px;
+	position: absolute;
+	max-width: 194px;
+	border-top: 0;
+}
+
+.projects {
+	padding-bottom: 106px;
+}
+
+
+.section_title-wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 48px;
+	justify-content: space-between;
+}
+
+
+/* ! Обрати внимание на адаптив линии при изменении размера */
+/* Либо посмотри, как делать адаптивным псевдоэлемент */
+.section_title::after {
+	top: 50%;
+	left: 210px;
+	width: 511px;
+	border: 0.5px solid #C778DD;
+	height: 1px;
+	content: "";
+	display: block;
+	position: absolute;
+}
+
+.progects_link {
+	color: white;
+	text-align: right;
+}
+
+.projects_cards-wrapper {
+	gap: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	border: 1px solid #ABB2BF;
+	max-width: 330px;
+}
+
+.card_image {
+	max-width: 100%;
+}
+
+.card_image-description {
+	gap: 5px;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	list-style: none;
+	padding-top: 8px;
+	padding-left: 8px;
+	border-bottom: 1px solid #ABB2BF;
+	padding-bottom: 8px;
+}
+
+.card_image-description-item {}
+
+.card_info {
+	padding: 16px 0 16px 16px;
+	max-width: 100%;
+}
+
+.card_mane {
+	color: white;
+	font-size: 24px;
+	margin-top: 0;
+	line-height: 31px;
+	margin-bottom: 24px;
+}
+
+.card_description {
+	color: #ABB2BF;
+	display: block;
+	font-size: 16px;
+}
+
+.card_live-button {
+	margin-right: 8px;
+}
+
+.card_cached-button {
+	border: 1px solid #ABB2BF;
+}
+
+/* SKILLS */
+.section_title__skills::after {
+	max-width: 239px;
+}
+
+.skills {
+	padding-bottom: 112px;
+}
+
+.skills_wrapper {
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+	justify-content: space-between;
+}
+
+.skills_image {
+	max-width: 349px;
+	max-height: 282px;
+}
+
+.skills_card-wrapper {
+	gap: 18px;
+	display: grid;
+	max-width: 584px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill_card {
+	border: 1px solid #ABB2BF;
+	max-width: 180px;
+	box-sizing: border-box;
+}
+
+.second-сolumn-card {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.third-сolumn-card {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.skill_name {
+	color: white;
+	padding: 8px;
+	border-bottom: 1px solid #ABB2BF;
+}
+
+.skill_list {
+	margin: 0;
+	padding: 0 0 8px 8px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.section_title__about::after {
+	max-width: 326px;
+}
+
+.about {
+	padding-bottom: 112px;
+}
+
+.about_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about_info {
+	max-width: 515px;
+	line-height: 33px;
+}
+
+.about_text {
+	margin-bottom: 27px;
+}
+.about_image-wrapper {
+	position: relative;
+}
+.about_dots-image {
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+.about_dots-image2 {
+	right: 20px;
+	bottom: 45px;
+	position: absolute;
+}
+
+.contacts {
+	padding-bottom: 142px;
+}
+
+.contacts_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts_text {
+	max-width: 505px;
+}
+
+.contacts_links {
+	border: 1px solid #ABB2BF;
+}
+
+.contacts_links-title {
+	padding-left: 16px;
+}
+
+.contacts_list {
+	padding: 16px;
+	padding-right: 8px;
+	padding-bottom: 0px;
+	list-style: none;
+	padding-left: 16px;
+}
+
+
+/* FOOTER */
+.footer {
+	max-width: 100%;
+	padding: 32px 10px 32px 10px;
+	border-top: 1px solid #ABB2BF;
+}
+
+.footer_wrapper {
+	display: flex;
+	max-width: 1024px;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_media-title {
+	font-size: 24px;
+	color: white;
+}
+
+.footer_links {
+	gap: 17px;
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+}
+
+@media (max-width: 1000px) {
+	.section_title {
+		font-size: 28px;
+	}
+	.main-information_info {
+		max-width: 500px;
+	}
+	.main-information_title {
+		font-size: 28px;
+		font-weight: 600;
+	}	
+	.main-information_image {
+		height: auto;
+		max-width: 400px;
+	}
+	.main-information_thesis-wrapper p {
+		padding: 24px;
+		font-size: 20px;
+	}
+}
+@media (max-width: 980px) {
+	.section_title::after {
+		width: 400px;
+	}
+	.skills_card-wrapper {
+		gap: 18px;
+		max-width: 584px;
+		grid-template-columns: 1fr 1fr;
+	}
+	.skill_card {
+		max-width: 180px;
+}
+
+	.second-сolumn-card {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		}
+
+	.third-сolumn-card {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+}
+	.frameworks_card {
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+@media (max-width: 860px) {
+	.section_title {
+		font-size: 25px;
+	}
+	.main-information_wrapper {
+		flex-direction: column;
+	}
+	.main-information_title {
+		font-size: 32px;
+		font-weight: 600;
+	}
+	.main-information_image {
+		height: auto;
+		max-width: 457px;
+	}
+	.about_info {
+		max-width: 400px;
+		line-height: 27px;
+	}
+	.about_image {
+		max-width: 300px;
+	}
+}
+@media (max-width: 800px) {
+	.section_title {
+		font-size: 23px;
+	}
+	.section_title::after {
+		left: 150px;
+		width: 380px;
+	}
+	.skills_wrapper {
+		display: flex;
+		padding-left: 0;
+		justify-content: center;
+	}
+	.skills_image {
+		display: none;
+	}	
+	.skills_card-wrapper {
+		gap: 18px;
+		display: grid;
+		max-width: 750px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}	
+	.skill_card {
+		max-width: 250px;
+	}
+	
+	.second-сolumn-card {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+	
+	.third-сolumn-card {
+		grid-column-start: 3;
+		grid-column-end: 4;
+	}
+	
+	.skill_name {
+		color: white;
+		padding: 8px;
+		border-bottom: 1px solid #ABB2BF;
+	}
+	
+	.skill_list {
+		margin: 0;
+		padding: 0 0 8px 8px;
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+}
+@media (max-width: 730px) {
+	.contacts {
+		padding-bottom: 70px;
+	}
+	.main-information {
+		padding-bottom: 30px;
+	}
+	.main-information_info {
+		max-width: 340px;
+	}
+	.main-information_image {
+		height: auto;
+		max-width: 400px;
+	}
+	.main-information_button {
+		display: none;
+	}
+	.main-information_thesis-wrapper {
+		display: none;
+	}
+	.section_title::after {
+		width: 200px;
+	}
+	.about_wrapper {
+		justify-content: center;
+	}
+	.about_info {
+		max-width: 750px;
+		line-height: 27px;
+	}
+	.about_image-wrapper {
+		display: none;
+	}
+	.contacts_wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 550px) {
+	.main-information {
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+	.main-information_image {
+		max-width: 307px;
+	}
+	.section_title::after {
+		width: 100px;
+	}
+	.section_title__skills::after {
+		width: 190px;
+	}
+	.section_title__about::after {
+		width: 190px;
+	}
+	.section_title__contacts::after {
+		width: 190px;
+	}
+	
+}
